@@ -42,7 +42,9 @@ const App = () => {
             : handleClick
         }
         className={`${
-          button === "AC" || button === "DEL" || button === "="
+          button === "0" || button === "="
+            ? "col-span-1"
+            : button === "AC" || button === "DEL"
             ? "col-span-2"
             : "col-span-1"
         } p-4 border border-gray-300 rounded ${
